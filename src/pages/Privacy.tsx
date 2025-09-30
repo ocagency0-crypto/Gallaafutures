@@ -23,9 +23,9 @@ const Privacy: React.FC = () => {
           <div className="mb-8">
             <button
               onClick={() => navigate(fromPage)}
-              className="inline-flex items-center text-[#D4AF37] hover:text-[#FFD777] transition-colors duration-200 mb-6"
+              className="inline-flex items-center text-[#D4AF37] hover:text-[#FFD777] transition-colors duration-200 mb-6 instant-reward text-glow-hover"
             >
-              <ArrowLeft className="w-5 h-5 mr-2" />
+              <ArrowLeft className="w-5 h-5 mr-2 icon-bounce" />
               {fromPage === '/login' ? 'Back to Login' : fromPage === '/register' ? 'Back to Sign Up' : 'Back to Home'}
             </button>
             
@@ -208,9 +208,9 @@ const Privacy: React.FC = () => {
           <div className="text-center mt-12">
             <button
               onClick={() => navigate(fromPage)}
-              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-xl hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-200"
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-xl hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-200 instant-reward ripple-effect"
             >
-              <ArrowLeft className="w-5 h-5 mr-2" />
+              <ArrowLeft className="w-5 h-5 mr-2 icon-bounce" />
               {fromPage === '/login' ? 'Return to Login' : fromPage === '/register' ? 'Return to Sign Up' : 'Return to Home'}
             </button>
           </div>

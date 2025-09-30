@@ -179,16 +179,16 @@ const Register: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         {/* Logo */}
         <FadeInUp className="text-center mb-8">
-          <button 
+          <button
             onClick={() => navigate('/')}
-            className="inline-flex items-center space-x-3 hover:opacity-80 transition-opacity mb-4"
+            className="inline-flex items-center space-x-3 hover:opacity-80 transition-opacity mb-4 hover-wobble instant-reward"
           >
-            <img 
-              src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png" 
-              alt="Gallaa Logo" 
-              className="h-16 w-auto"
+            <img
+              src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png"
+              alt="Gallaa Logo"
+              className="h-16 w-auto breathe"
             />
-            <span className="text-2xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent">
+            <span className="text-2xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent text-glow-hover">
               Gallaa
             </span>
           </button>
@@ -658,18 +658,18 @@ const Register: React.FC = () => {
                     <button
                       type="button"
                       onClick={handleNext}
-                      className="reward-button px-6 py-3 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-lg hover:shadow-lg hover:shadow-[#D4AF37]/25 hover:-translate-y-1 hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:scale-100 flex items-center transform"
+                      className="reward-button instant-reward ripple-effect px-6 py-3 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-lg hover:shadow-lg hover:shadow-[#D4AF37]/25 hover:-translate-y-1 hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:scale-100 flex items-center transform"
                     >
                       Next
-                      <ArrowRight className="w-4 h-4 ml-2" />
+                      <ArrowRight className="w-4 h-4 ml-2 icon-bounce" />
                     </button>
                   ) : (
                     <button
                       type="submit"
-                      className="reward-button px-6 py-3 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-lg hover:shadow-lg hover:shadow-[#D4AF37]/25 hover:-translate-y-1 hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:scale-100 flex items-center transform"
+                      className="reward-button instant-reward ripple-effect px-6 py-3 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-lg hover:shadow-lg hover:shadow-[#D4AF37]/25 hover:-translate-y-1 hover:scale-105 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 disabled:hover:scale-100 flex items-center transform"
                     >
                       Create Account
-                      <ArrowRight className="w-4 h-4 ml-2" />
+                      <ArrowRight className="w-4 h-4 ml-2 icon-bounce" />
                     </button>
                   )}
                 </div>
