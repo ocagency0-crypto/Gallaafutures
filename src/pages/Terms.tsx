@@ -1,10 +1,14 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { ArrowLeft, Shield, FileText, Users, CreditCard } from 'lucide-react';
 import FadeInUp from '../components/FadeInUp';
 import MouseTrail from '../components/MouseTrail';
 
 const Terms: React.FC = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const fromPage = location.state?.from || '/';
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -17,13 +21,13 @@ const Terms: React.FC = () => {
         {/* Header */}
         <FadeInUp>
           <div className="mb-8">
-            <Link 
-              to="/" 
+            <button
+              onClick={() => navigate(fromPage)}
               className="inline-flex items-center text-[#D4AF37] hover:text-[#FFD777] transition-colors duration-200 mb-6"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
-              Back to Home
-            </Link>
+              {fromPage === '/login' ? 'Back to Login' : fromPage === '/register' ? 'Back to Sign Up' : 'Back to Home'}
+            </button>
             
             <div className="text-center">
               <h1 className="text-4xl md:text-5xl font-['Playfair_Display'] font-bold mb-4 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent">
@@ -175,13 +179,13 @@ const Terms: React.FC = () => {
         {/* Footer */}
         <FadeInUp delay={200}>
           <div className="text-center mt-12">
-            <Link 
-              to="/" 
+            <button
+              onClick={() => navigate(fromPage)}
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-xl hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-200"
             >
               <ArrowLeft className="w-5 h-5 mr-2" />
-              Return to Home
-            </Link>
+              {fromPage === '/login' ? 'Return to Login' : fromPage === '/register' ? 'Return to Sign Up' : 'Return to Home'}
+            </button>
           </div>
         </FadeInUp>
       </div>

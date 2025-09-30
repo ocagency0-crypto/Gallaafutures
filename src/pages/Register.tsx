@@ -603,7 +603,7 @@ const Register: React.FC = () => {
                       />
                       <span className="ml-3 text-sm text-[#ECE8E3]/80">
                         I agree to the{' '}
-                        <Link to="/terms" className="text-[#D4AF37] hover:text-[#FFD777] transition-colors">
+                        <Link to="/terms" state={{ from: '/register' }} className="text-[#D4AF37] hover:text-[#FFD777] transition-colors">
                           Terms of Service
                         </Link>
                       </span>
@@ -626,7 +626,7 @@ const Register: React.FC = () => {
                       />
                       <span className="ml-3 text-sm text-[#ECE8E3]/80">
                         I agree to the{' '}
-                        <Link to="/privacy" className="text-[#D4AF37] hover:text-[#FFD777] transition-colors">
+                        <Link to="/privacy" state={{ from: '/register' }} className="text-[#D4AF37] hover:text-[#FFD777] transition-colors">
                           Privacy Policy
                         </Link>
                       </span>

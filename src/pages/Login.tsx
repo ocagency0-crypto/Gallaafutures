@@ -35,14 +35,19 @@ const Login: React.FC = () => {
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-[#D4AF37]/20 to-[#FFD777]/10 items-center justify-center p-12 relative">
         <div className="max-w-md text-center">
           <div className="mb-8">
-            <img 
-              src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png" 
-              alt="Gallaa Logo" 
-              className="h-20 w-auto mx-auto mb-4"
-            />
-            <span className="text-2xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent">
-              Gallaa
-            </span>
+            <button
+              onClick={() => navigate('/')}
+              className="inline-flex flex-col items-center hover:opacity-80 transition-opacity"
+            >
+              <img
+                src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png"
+                alt="Gallaa Logo"
+                className="h-20 w-auto mx-auto mb-4"
+              />
+              <span className="text-2xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent">
+                Gallaa
+              </span>
+            </button>
           </div>
           <h2 className="text-4xl font-['Playfair_Display'] font-bold mb-4 leading-tight">
             India’s Premier <span className="text-[#D4AF37]">Luxury B2B</span> Platform
@@ -184,8 +189,8 @@ const Login: React.FC = () => {
               {/* Terms */}
               <div className="mt-8 text-center text-xs text-[#ECE8E3]/50">
                 By signing in, you agree to our{' '}
-                <Link to="/terms" className="text-[#D4AF37] hover:text-[#FFD777]">Terms</Link> and{' '}
-                <Link to="/privacy" className="text-[#D4AF37] hover:text-[#FFD777]">Privacy Policy</Link>.
+                <Link to="/terms" state={{ from: '/login' }} className="text-[#D4AF37] hover:text-[#FFD777]">Terms</Link> and{' '}
+                <Link to="/privacy" state={{ from: '/login' }} className="text-[#D4AF37] hover:text-[#FFD777]">Privacy Policy</Link>.
               </div>
             </div>
           </FadeInUp>
