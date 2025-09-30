@@ -35,46 +35,46 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         scrollY > 50 ? 'bg-[#08070A]/95 backdrop-blur-lg border-b border-[#ECE8E3]/10' : 'bg-transparent'
       }`}>
         <nav className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3 hover-wobble instant-reward group">
-            <img
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
               src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png"
-              alt="Gallaa Logo"
-              className="h-8 w-auto gentle-sway"
+              alt="Gallaa Logo" 
+              className="h-8 w-auto"
             />
-            <span className="text-xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent text-glow-hover">
+            <span className="text-xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent">
               Gallaa
             </span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
-            <Link
-              to="/marketplace"
-              className={`hover:text-[#D4AF37] transition-colors duration-200 text-glow-hover ${
-                isActive('/marketplace') ? 'text-[#D4AF37] shimmer-text' : ''
+            <Link 
+              to="/marketplace" 
+              className={`hover:text-[#D4AF37] transition-colors duration-200 ${
+                isActive('/marketplace') ? 'text-[#D4AF37]' : ''
               }`}
             >
               Marketplace
             </Link>
-            <Link
-              to="/credit"
-              className={`hover:text-[#D4AF37] transition-colors duration-200 text-glow-hover ${
-                isActive('/credit') ? 'text-[#D4AF37] shimmer-text' : ''
+            <Link 
+              to="/credit" 
+              className={`hover:text-[#D4AF37] transition-colors duration-200 ${
+                isActive('/credit') ? 'text-[#D4AF37]' : ''
               }`}
             >
               Credit Solutions
             </Link>
-            <Link
-              to="/pricing"
-              className={`hover:text-[#D4AF37] transition-colors duration-200 text-glow-hover ${
-                isActive('/pricing') ? 'text-[#D4AF37] shimmer-text' : ''
+            <Link 
+              to="/pricing" 
+              className={`hover:text-[#D4AF37] transition-colors duration-200 ${
+                isActive('/pricing') ? 'text-[#D4AF37]' : ''
               }`}
             >
               Pricing
             </Link>
-            <Link
-              to="/about"
-              className={`hover:text-[#D4AF37] transition-colors duration-200 text-glow-hover ${
-                isActive('/about') ? 'text-[#D4AF37] shimmer-text' : ''
+            <Link 
+              to="/about" 
+              className={`hover:text-[#D4AF37] transition-colors duration-200 ${
+                isActive('/about') ? 'text-[#D4AF37]' : ''
               }`}
             >
               About
@@ -82,10 +82,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Link to="/login" className="px-4 py-2 text-[#ECE8E3] hover:text-[#D4AF37] transition-colors duration-200 text-glow-hover ripple-effect">
+            <Link to="/login" className="px-4 py-2 text-[#ECE8E3] hover:text-[#D4AF37] transition-colors duration-200">
               Sign In
             </Link>
-            <Link to="/register" className="reward-button instant-reward ripple-effect px-6 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-xl hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-200 transform hover:-translate-y-1 blink-glow">
+            <Link to="/register" className="reward-button px-6 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold rounded-xl hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-200 transform hover:-translate-y-1">
               Get Started
             </Link>
           </div>
@@ -135,10 +135,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
           <div className="grid md:grid-cols-4 gap-8 mb-12">
             <div className="col-span-1">
               <div className="flex items-center space-x-3 mb-4">
-                <img
+                <img 
                   src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png"
-                  alt="Gallaa Logo"
-                  className="h-8 w-auto breathe"
+                  alt="Gallaa Logo" 
+                  className="h-8 w-auto"
                 />
                 <span className="text-xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent">
                   Gallaa
@@ -159,10 +159,10 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
             <div>
               <h4 className="font-semibold mb-4 text-[#D4AF37]">Platform</h4>
               <ul className="space-y-2 text-[#ECE8E3]/70">
-                <li><Link to="/marketplace" className="hover:text-[#D4AF37] transition-colors text-glow-hover">Marketplace</Link></li>
-                <li><Link to="/credit" className="hover:text-[#D4AF37] transition-colors text-glow-hover">Credit Solutions</Link></li>
-                <li><Link to="/pricing" className="hover:text-[#D4AF37] transition-colors text-glow-hover">Subscriptions</Link></li>
-                <li><a href="#" className="hover:text-[#D4AF37] transition-colors text-glow-hover">API</a></li>
+                <li><Link to="/marketplace" className="hover:text-[#D4AF37] transition-colors">Marketplace</Link></li>
+                <li><Link to="/credit" className="hover:text-[#D4AF37] transition-colors">Credit Solutions</Link></li>
+                <li><Link to="/pricing" className="hover:text-[#D4AF37] transition-colors">Subscriptions</Link></li>
+                <li><a href="#" className="hover:text-[#D4AF37] transition-colors">API</a></li>
               </ul>
             </div>
 

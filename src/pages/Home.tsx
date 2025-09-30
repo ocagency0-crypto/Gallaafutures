@@ -43,30 +43,30 @@ const Home: React.FC = () => {
           <FadeInUp className="text-center max-w-5xl mx-auto">
             {/* Logo */}
             <div className="mb-8 flex justify-center">
-              <img
-                src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png"
-                alt="Gallaa Logo"
-                className="h-20 w-auto floating-logo breathe"
+              <img 
+                src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png" 
+                alt="Gallaa Logo" 
+                className="h-20 w-auto floating-logo"
               />
             </div>
 
             {/* Trust Badge */}
             <div className="mb-8 flex justify-center">
-              <div className="flex items-center space-x-2 px-6 py-3 bg-[#ECE8E3]/10 rounded-full border border-[#ECE8E3]/20 backdrop-blur-sm floating-badge border-glow-animate glow-soft">
-                <Star className="w-5 h-5 text-[#D4AF37] blink-glow" />
+              <div className="flex items-center space-x-2 px-6 py-3 bg-[#ECE8E3]/10 rounded-full border border-[#ECE8E3]/20 backdrop-blur-sm floating-badge">
+                <Star className="w-5 h-5 text-[#D4AF37] animate-pulse" />
                 <span className="font-medium">Trusted by 500+ Premium Brands</span>
               </div>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-['Playfair_Display'] font-black leading-tight mb-8 tracking-wide">
-              <span className="block bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent glow-text shimmer-text">
+              <span className="block bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent glow-text">
                 Wholesale.
               </span>
-              <span className="block bg-gradient-to-r from-[#FFD777] to-[#D4AF37] bg-clip-text text-transparent glow-text shimmer-text pb-2">
+              <span className="block bg-gradient-to-r from-[#FFD777] to-[#D4AF37] bg-clip-text text-transparent glow-text pb-2">
                 Reimagined.
               </span>
-              <span className="block text-[#ECE8E3] font-extrabold scale-pulse">
+              <span className="block text-[#ECE8E3] font-extrabold">
                 Credit. Confidence. Growth.
               </span>
             </h1>
@@ -79,20 +79,20 @@ const Home: React.FC = () => {
 
             {/* CTA Buttons */}
             <div className="mb-8 flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Link
+              <Link 
                 to="/register"
-                className="reward-button instant-reward ripple-effect group px-10 py-4 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-bold text-lg rounded-xl hover:shadow-xl hover:shadow-[#D4AF37]/30 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105 blink-glow"
+                className="reward-button group px-10 py-4 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-bold text-lg rounded-xl hover:shadow-xl hover:shadow-[#D4AF37]/30 transition-all duration-300 transform hover:-translate-y-2 hover:scale-105"
               >
                 Get Started Today
-                <ArrowRight className="inline-block w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-200 icon-bounce" />
+                <ArrowRight className="inline-block w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-200" />
               </Link>
-
-              <button
-                className="reward-button instant-reward ripple-effect group px-12 py-5 border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#08070A] rounded-xl transition-all duration-300 font-bold text-xl hover:shadow-xl hover:shadow-[#D4AF37]/30 hover:-translate-y-2 hover:scale-105 hover-glow border-glow-animate"
-                onClick={scrollToVideos}
+              
+              <button 
+                className="px-10 py-4 border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#08070A] rounded-xl transition-all duration-300 font-semibold hover:-translate-y-1 hover:scale-105 hover-glow"
+                className="reward-button group px-12 py-5 border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#08070A] rounded-xl transition-all duration-300 font-bold text-xl hover:shadow-xl hover:shadow-[#D4AF37]/30 hover:-translate-y-2 hover:scale-105 hover-glow"
               >
                 Watch Demo
-                <ArrowRight className="inline-block w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-200 icon-bounce" />
+                <ArrowRight className="inline-block w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform duration-200" />
               </button>
             </div>
 

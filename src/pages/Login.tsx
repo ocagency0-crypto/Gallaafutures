@@ -37,14 +37,14 @@ const Login: React.FC = () => {
           <div className="mb-8">
             <button
               onClick={() => navigate('/')}
-              className="inline-flex flex-col items-center hover:opacity-80 transition-opacity hover-wobble instant-reward"
+              className="inline-flex flex-col items-center hover:opacity-80 transition-opacity"
             >
               <img
                 src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png"
                 alt="Gallaa Logo"
-                className="h-20 w-auto mx-auto mb-4 breathe"
+                className="h-20 w-auto mx-auto mb-4"
               />
-              <span className="text-2xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent text-glow-hover">
+              <span className="text-2xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent">
                 Gallaa
               </span>
             </button>
@@ -65,16 +65,16 @@ const Login: React.FC = () => {
             <div className="text-center mb-10">
               {/* Mobile Logo */}
               <div className="lg:hidden mb-8">
-                <button
+                <button 
                   onClick={() => navigate('/')}
-                  className="inline-flex items-center space-x-3 hover:opacity-80 transition-opacity hover-wobble instant-reward"
+                  className="inline-flex items-center space-x-3 hover:opacity-80 transition-opacity"
                 >
-                  <img
-                    src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png"
-                    alt="Gallaa Logo"
-                    className="h-12 w-auto gentle-sway"
+                  <img 
+                    src="https://i.ibb.co/LzTVQ9cj/Gallalogo.png" 
+                    alt="Gallaa Logo" 
+                    className="h-12 w-auto"
                   />
-                  <span className="text-xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent text-glow-hover">
+                  <span className="text-xl font-['Playfair_Display'] font-bold bg-gradient-to-r from-[#D4AF37] to-[#FFD777] bg-clip-text text-transparent">
                     Gallaa
                   </span>
                 </button>
@@ -160,10 +160,10 @@ const Login: React.FC = () => {
                 {/* Sign In */}
                 <button
                   type="submit"
-                  className="reward-button instant-reward ripple-effect w-full py-3 rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold hover:shadow-lg hover:shadow-[#D4AF37]/30 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 flex items-center justify-center"
+                  className="reward-button w-full py-3 rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-semibold hover:shadow-lg hover:shadow-[#D4AF37]/30 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 flex items-center justify-center"
                 >
                   Sign In
-                  <ArrowRight className="w-4 h-4 ml-2 icon-bounce" />
+                  <ArrowRight className="w-4 h-4 ml-2" />
                 </button>
               </form>
 

@@ -146,8 +146,8 @@ const Marketplace: React.FC = () => {
             </div>
             
             <div className="flex items-center gap-4">
-              <button className="flex items-center px-4 py-2 border-2 border-[#ECE8E3]/30 rounded-lg hover:border-[#D4AF37]/50 hover:bg-[#ECE8E3]/5 transition-all duration-200 instant-reward ripple-effect">
-                <Filter className="w-4 h-4 mr-2 icon-bounce" />
+              <button className="flex items-center px-4 py-2 border-2 border-[#ECE8E3]/30 rounded-lg hover:border-[#D4AF37]/50 hover:bg-[#ECE8E3]/5 transition-all duration-200">
+                <Filter className="w-4 h-4 mr-2" />
                 Filters
               </button>
               
@@ -235,18 +235,18 @@ const Marketplace: React.FC = () => {
                         </div>
                       )}
                       <div className="absolute top-3 right-3 flex gap-2">
-                        <button className="p-2 bg-black/20 backdrop-blur-sm rounded-full hover:bg-[#D4AF37]/20 transition-colors instant-reward hover-wobble">
-                          <Heart className="w-4 h-4 icon-bounce" />
+                        <button className="p-2 bg-black/20 backdrop-blur-sm rounded-full hover:bg-[#D4AF37]/20 transition-colors">
+                          <Heart className="w-4 h-4" />
                         </button>
-                        <button className="p-2 bg-black/20 backdrop-blur-sm rounded-full hover:bg-[#D4AF37]/20 transition-colors instant-reward hover-wobble">
-                          <Eye className="w-4 h-4 icon-bounce" />
+                        <button className="p-2 bg-black/20 backdrop-blur-sm rounded-full hover:bg-[#D4AF37]/20 transition-colors">
+                          <Eye className="w-4 h-4" />
                         </button>
                       </div>
                     </div>
                     
                     <div className="p-6 flex-1">
                       <div className="flex items-start justify-between mb-2">
-                        <h3 className="font-semibold text-lg group-hover:text-[#D4AF37] transition-colors text-glow-hover">
+                        <h3 className="font-semibold text-lg group-hover:text-[#D4AF37] transition-colors">
                           {product.name}
                         </h3>
                         <div className="flex items-center text-sm text-[#ECE8E3]/60">
@@ -275,14 +275,14 @@ const Marketplace: React.FC = () => {
                       </p>
                       
                       <div className="flex gap-2">
-                        <button
+                        <button 
                           disabled={!product.inStock}
-                          className="reward-button instant-reward ripple-effect flex-1 px-4 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-medium rounded-lg hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center hover:-translate-y-1 hover:scale-105 interactive-glow"
+                          className="reward-button flex-1 px-4 py-2 bg-gradient-to-r from-[#D4AF37] to-[#FFD777] text-[#08070A] font-medium rounded-lg hover:shadow-lg hover:shadow-[#D4AF37]/25 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center hover:-translate-y-1 hover:scale-105 interactive-glow"
                         >
-                          <ShoppingCart className="w-4 h-4 mr-2 icon-bounce" />
+                          <ShoppingCart className="w-4 h-4 mr-2" />
                           Add to Cart
                         </button>
-                        <button className="px-4 py-2 border-2 border-[#ECE8E3]/30 hover:border-[#D4AF37] hover:bg-[#ECE8E3]/5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover-glow-enhanced interactive-glow instant-reward ripple-effect">
+                        <button className="px-4 py-2 border-2 border-[#ECE8E3]/30 hover:border-[#D4AF37] hover:bg-[#ECE8E3]/5 rounded-lg transition-all duration-300 hover:-translate-y-0.5 hover:scale-105 hover-glow-enhanced interactive-glow">
                           Quote
                         </button>
                       </div>
